@@ -1,7 +1,8 @@
 {
-  "trailingSlash": true,
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/preview/:path*", "destination": "/dist/preview/:path*" }
+  "version": 2,
+  "public": true,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
