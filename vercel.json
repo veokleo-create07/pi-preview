@@ -1,4 +1,7 @@
 {
   "trailingSlash": true,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/preview/:path*", "destination": "/dist/preview/:path*" }
+  ]
 }
